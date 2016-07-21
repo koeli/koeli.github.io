@@ -548,3 +548,6 @@ input[placeholder], [placeholder], *[placeholder] {
     width: 80% !important;
 }
 }
+#myNavbar a:active{
+color: white;
+}
