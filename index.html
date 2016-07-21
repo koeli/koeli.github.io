@@ -24,16 +24,16 @@
 			<div class="row">
 				<div class="col-md-3 ">
 					<div class="navbar-header">
-						<!--button type="button" class="navbar-toggle menu-button" data-toggle="collapse" data-target="#myNavbar">
+						<button type="button" class="navbar-toggle menu-button" data-toggle="collapse" data-target="#myNavbar">
 							<span class="glyphicon glyphicon-align-justify"></span>
-						</button-->
+						</button>
 						<a class="navbar-brand logo" href="index.html">Koeli Ghoshal</a>
 					</div>
 				</div>
 				<div class="col-md-9">
 					<nav class="collapse navbar-collapse" id="myNavbar" role="navigation">
 						<ul class="nav navbar-nav navbar-right menu">
-							<li><a href="#page-top" >Home</a></li>
+							<li><a href="#" >Home</a></li>
 							<li><a href="publication.html" >Publications</a></li>
 							<li><a href="profile.html" >Profile</a></li>
 							<li><a href="education.html" >Education</a></li>	
@@ -146,65 +146,6 @@
 }
 google.maps.event.addDomListener(window, 'load', initialize);
 </script>
-<script>
-  $(document).ready(function () {
-   $(document).on("scroll", onScroll);
 
-   $('a[href^="#"]').on('click', function (e) {
-    e.preventDefault();
-    $(document).off("scroll");
-
-    $('a').each(function () {
-     $(this).removeClass('active');
-   })
-    $(this).addClass('active');
-
-    var target = this.hash;
-    $target = $(target);
-    $('html, body').stop().animate({
-     'scrollTop': $target.offset().top
-   }, 500, 'swing', function () {
-     window.location.hash = target;
-     $(document).on("scroll", onScroll);
-   });
-  });
- });
-
-  function onScroll(event){
-   var scrollPosition = $(document).scrollTop();
-   $('nav a').each(function () {
-    var currentLink = $(this);
-    var refElement = $(currentLink.attr("href"));
-    if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-     $('nav ul li a').removeClass("active");
-     currentLink.addClass("active");
-   }
-   else{
-     currentLink.removeClass("active");
-   }
- });
- }
-</script>
-<script type="text/javascript">
-  jQuery(function ($) {
-      // custom formatting example
-      $('.timer').data('countToOptions', {
-      	formatter: function (value, options) {
-      		return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
-      	}
-      });
-
-      // start all the timers
-      $('#starts').waypoint(function() {
-      	$('.timer').each(count);
-      });
-
-      function count(options) {
-      	var $this = $(this);
-      	options = $.extend({}, options || {}, $this.data('countToOptions') || {});
-      	$this.countTo(options);
-      }
-    });
-</script>
 </body>
 </html>

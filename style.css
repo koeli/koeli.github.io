@@ -4,7 +4,7 @@
 
 .header
 {
-	background: #212A3F;
+	background: black;
 	height: 60px;
 	position: fixed;
 	width: 100%;
@@ -35,13 +35,13 @@
 	font-weight:500;
 	font-family: 'Poppins', sans-serif;
 	line-height: 29px;
-	background-color: #212A3F;
+	background-color: black;
 	z-index:999;
 	
 }
 .menu li a:hover
 {
-	background-color: #212A3F;
+	background-color: black;
 	color:#fff;
 }
 .menu-button
@@ -548,6 +548,6 @@ input[placeholder], [placeholder], *[placeholder] {
     width: 80% !important;
 }
 }
-#myNavbar a:active{
+a:active{
 color: white;
 }
