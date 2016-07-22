@@ -31,7 +31,7 @@
 }
 .menu li a
 {
-	color: #434F5B;
+	color: #fff;
 	font-weight:500;
 	font-family: 'Poppins', sans-serif;
 	line-height: 29px;
@@ -42,7 +42,7 @@
 .menu li a:hover
 {
 	background-color: black;
-	color:#fff;
+	color:#434F5B;
 }
 .menu-button
 {
